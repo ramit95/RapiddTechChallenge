@@ -1,0 +1,59 @@
+<table style="text-align: center;">
+  <tr>
+    <td>
+      <label for="employee.name">Name</label>
+      <input type="text" [(ngModel)]="employee.name" (ngModelChange)="validate()">
+
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.dateOfBirth">Date of Birth</label>
+      <input type="date" [(ngModel)]="employee.dateOfBirth" name="dob" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.gender">Gender</label>
+      Male
+      <input type="radio" [(ngModel)]="employee.gender" value="true" id=""> Female
+      <input type="radio" [(ngModel)]="employee.gender" value="false" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.reason">Reason</label>
+      <input type="text" [(ngModel)]="employee.reason" name="reason" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.lastSalary">Last Salary</label>
+      <input type="number" [(ngModel)]="employee.lastSalary" name="lastSalary" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.expectedSalary">Expected Salary</label>
+      <input type="number" [(ngModel)]="employee.expectedSalary" name="expectedSalary" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.technicalExpertise">Technical Expertise</label>
+      <input type="text" [(ngModel)]="employee.technicalExpertise" name="technicalExpertise" id="">
+    </td>
+
+  </tr>
+  <tr *ngIf="isValid">
+    <td>
+      <input type="button" value="Submit" (click)="submit()">
+    </td>
+  </tr>
+</table>

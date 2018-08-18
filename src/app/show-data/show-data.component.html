@@ -1,0 +1,56 @@
+<table style="text-align: center;">
+  <tr>
+    <td>
+      <label for="employee.name">Name</label>
+      <input readonly type="text" [(ngModel)]="employee.name">
+
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.dateOfBirth">Date of Birth</label>
+      <input readonly type="date" [(ngModel)]="employee.dateOfBirth" name="dob" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.gender">Gender</label>
+      Male
+      <input readonly type="radio" [(ngModel)]="employee.gender" name="gender" value="true" id="">
+      Female
+      <input readonly type="radio" [(ngModel)]="employee.gender" name="gender" value=false id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.reason">Reason</label>
+      <input readonly type="text" [(ngModel)]="employee.reason" name="reason" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.lastSalary">Last Salary</label>
+      <input readonly type="number" [(ngModel)]="employee.lastSalary" name="lastSalary" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.expectedSalary">Expected Salary</label>
+      <input readonly type="number" [(ngModel)]="employee.expectedSalary" name="expectedSalary" id="">
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <label for="employee.technicalExpertise">Technical Expertise</label>
+      <input readonly type="text" [(ngModel)]="employee.technicalExpertise" name="technicalExpertise" id="">
+    </td>
+
+  </tr>
+
+</table>
